@@ -1,4 +1,4 @@
-## Introduction
+﻿## Introduction
 ## vehicle recognition and tracking based on yolo v3 and sort algorithem.
 This is the final project of the machine vision course. Given that multi-object tracking (MOT) is currently the research focus, this project will open source to help related research. The basis of this project is: **YOLOv3**, multi-target recognition algorithm, Kalman filter tracking, Hungarian algorithm. (IPIL 2016) This project has basically completed the identification and tracking of vehicle targets in the video, but the robustness is not perfect.The yolov3 implementation is from [darknet](https://github.com/pjreddie/darknet). BTW, this project can work well in online network.
 
@@ -47,8 +47,21 @@ just run the object_tracker.py and you can realize a simple offline MOA.
 here is the effect of the algorithm
 ![image](https://github.com/Github-chenyang/vehicle_tracking_yolov3/raw/master/docs/1.png)
 
+# train your own cfg as well as weights
+
+This part is mainly based on [packyan’s work](https://github.com/packyan/PyTorch-YOLOv3-kitti). I just change some code so that it is easy for me to use. 
+
+##### Download pretrained weights
+if you wan use pretrained darknet-53 on IMAGENET weights, please download [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74),and put it into `checkpoints/`
+
+if you just want a pretrained weights on kitti dataset for test or detect, please download [pretrained weights file](https://drive.google.com/file/d/1BRJDDCMRXdQdQs6-x-3PmlzcEuT9wxJV/view?usp=sharing), and put it into `weights` folder, the path:
+`weights/yolov3-kitti.weights`
+
+## if you want some proper vehicle dataset:
+I truly recommend the NVIDIA [city dataset] (https://www.aicitychallenge.org/2020-data-and-evaluation/). Data for this challenge comes from multiple traffic cameras from a city in the United States as well as from state highways in Iowa. 
+
 # final
-	if this project can help you solve the project or inspire you, could you please give me a star?
+if this project can help you solve the project or inspire you, could you please give me a star?
 ---------------------------------------------
 求个star～
 
