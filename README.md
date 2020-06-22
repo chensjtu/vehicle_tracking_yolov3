@@ -62,9 +62,8 @@ maybe this is its looklike.
 ![image](https://github.com/Github-chenyang/vehicle_tracking_yolov3/raw/master/docs/2.png)
 
 # final
-if this project can help you solve the project or inspire you, could you please give me a star?
----------------------------------------------
-求个star～
+the project has been updated and the performance is better now!
+just enjoy!
 
 
 
